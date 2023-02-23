@@ -1,0 +1,30 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "first-quarter title last-quarter"
+      "wane-cres full wax-cres"
+      "wane-gib new wax-gib";
+  }
+  
+  .title { grid-area: title; }
+  
+  .first-quarter { grid-area: first-quarter; }
+  
+  .last-quarter { grid-area: last-quarter; }
+  
+  .full { grid-area: full; }
+  
+  .wane-cres { grid-area: wane-cres; }
+  
+  .wax-cres { grid-area: wax-cres; }
+  
+  .wane-gib { grid-area: wane-gib; }
+  
+  .new { grid-area: new; }
+  
+  .wax-gib { grid-area: wax-gib; }
+  
